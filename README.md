@@ -8,5 +8,5 @@ To add these, copy the ```style.css``` file into a new style-boost on arc. They 
 the accent colour the arc space. It also changes the background colours to black (amoled)
 
 ## Future Boosts:
-[ ] Blackboard style boost
-[ ] echo360 style boost (with volume booster)
+- [ ] Blackboard style boost
+- [ ] echo360 style boost (with volume booster)

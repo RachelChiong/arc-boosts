@@ -1,0 +1,132 @@
+/*
+ * @title Overleaf Style boost
+ * @author RachelChiong
+*/
+:root {
+  --header-bg: #0a0909 !important;
+  --sidebar-bg: #1a1618 !important;
+  --sidebar-border:#1f1619 !important;
+  /* If you want to add static accent colours, uncomment this */
+  /* --primary-accent: #eb1664 !important; */
+  /* --secondary-accent:#ff79aa !important; */
+  --primary-accent: var(--arc-palette-cutoutColor) !important;
+  --secondary-accent: var(--arc-palette-foregroundSecondary) !important;
+  --editor-toolbar-bg: #180d11 !important;
+}
+
+/* Sets the colours for each component */
+.file-tree:not(.multi-selected) ul.file-tree-list li.selected>.entity>.entity-name {
+    background-color: var(--secondary-accent) !important;
+}
+.file-tree:not(.multi-selected) ul.file-tree-list li.selected>.entity>.entity-name:before {
+    background-color: var(--secondary-accent) !important;
+}
+
+.file-tree .toolbar.toolbar-filetree {
+    background-color: var(--sidebar-bg) !important;
+}
+
+.toolbar {
+  border-bottom: var(--sidebar-bg) !important;
+}
+
+.toolbar-editor {
+  background-color: var(--sidebar-bg) !important;
+}
+
+.toolbar-header {
+  background-color: var(--header-bg) !important;
+}
+
+.toggle-switch-input:checked+.toggle-switch-label {
+  background-color: var(--secondary-accent) !important;
+}
+
+.btn-primary {
+  background-color: var(--secondary-accent) !important;
+}
+
+.project-name .name {
+  color: var(--secondary-accent) !important;
+}
+
+.formatting-buttons-wrapper {
+  color: var(--sidebar-bg) !important;
+}
+
+.formatting-btn {
+  display: none !important;
+}
+
+.ui-layout-resizer {
+  background-color: var(--sidebar-border);
+}
+
+.custom-toggler:hover {
+  background-color: var(--secondary-accent) !important;
+}
+.documentation-btn-container {
+  background-color: var(--header-bg) !important;
+}
+
+.pdf .toolbar.toolbar-pdf {
+  background-color: var(--sidebar-bg) !important;
+}
+
+.file-tree {
+  background-color: var(--sidebar-bg) !important;
+}
+.outline-container {
+  background-color: var(--sidebar-bg) !important;
+}
+
+.outline-body {
+  background-color: #1f1619 !important;
+}
+
+.outline-header {
+    background-color: var(--editor-toolbar-bg) !important;
+    border-bottom: 1px solid var(--editor-toolbar-bg) !important;
+    border-top: 1px solid var(--editor-toolbar-bg) !important;
+    display: flex;
+    flex-shrink: 0;
+    height: 32px;
+}
+
+/* Home page */
+.project-list-react .project-list-sidebar-wrapper-react {
+  background-color: var(--sidebar-bg) !important;
+}
+
+.navbar-default {
+  background-color: var(--header-bg) !important;
+}
+
+td a {
+  color: var(--primary-accent) !important;
+}
+
+.btn-link {
+  color: var(--primary-accent) !important;
+}
+
+
+/*  The first part is called a selector
+    Everything on a web page has a selector:
+    - the tag (body, div, p, etc)
+    - the class (.container)
+    - the id (#main)
+    the rules you write within the {} only effect that selector.
+
+    You can use Inspect Element to find out what an element's
+    tag, ID or class is. */
+.selector {
+  /*  These are rules. You can write as many as you want to!
+    Learn more about CSS here:
+    https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps
+    See a list of all the styles you can change here:
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Reference */
+
+  /* font-size: 30px; */
+  /* TODO: Un-comment the line above */
+}

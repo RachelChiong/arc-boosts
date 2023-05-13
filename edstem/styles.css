@@ -1,0 +1,153 @@
+/**
+ * @title edStem Style boost
+ * @author RachelChiong
+ *
+ * @Note WIP - changes made are anchored with TODO Tags
+ * TODO: fix customisation for category tag colours
+*/
+
+/* Ripped the variable names from the edStem style sheet */
+.theme-dark {
+    --text-body: #eee;
+    --text-body2: #ccc;
+    --text-body3: #aaa;
+    --text-lightest: #9d9d9d;
+    --text-highlight-bg: #555500;
+    --text-accent: #79a0d1;
+    --text-accent-bold: #add2ff;
+    --page-bg: #0a0909 !important;
+    --page-bg2: #1a1618 !important;
+    --page-bg3: #38373b;
+    --page-bg4: #403e43;
+    --page-bg-transparent: rgba(41, 40, 43, 0);
+    --control-fg: white;
+    --control-bg: #1a1618 !important;
+    --control-fg-disabled: #555;
+    --control-bg-disabled: #393539;
+    --control-border: #434144;
+    --control-border-weak: #343235;
+    --control-border-strong: #514d53;
+    --control-active-bg: #3c3b2e;
+    --button-bg: #4f545c;
+    --button-fg: white;
+    --button-border: transparent;
+    --button-pressed-bg: #808080;
+    --button-disabled-bg: rgba(79, 84, 92, 0.5);
+    --button-disabled-fg: rgba(255, 255, 255, 0.5);
+    --button-disabled-border: transparent;
+    --button-primary-bg: var(--arc-palette-foregroundSecondary) !important;
+    --button-primary-bg-transparent: rgba(9, 111, 244, 0);
+    --button-danger-bg: #ef042e;
+    --button-success-bg: #058a1b;
+    --focus-ring-color: rgba(0, 127, 255, 0.4);
+    --focus-ring-color-transparent: rgba(0, 127, 255, 0);
+    --focus-ring-size: 3px;
+    --focus-ring-transition: box-shadow 0.1s ease-in-out;
+    --focus-ring-box-shadow: 0 0 0 var(--focus-ring-size) var(--focus-ring-color);
+    --focus-ring-box-shadow-none: 0 0 0 0 var(--focus-ring-color-transparent);
+    --focus-outline-width: 2px;
+    --focus-outline-offset: 2px;
+    --focus-outline-color: #007fff;
+    --selection: var(--arc-palette-foregroundSecondary) !important;
+    --selection-text: var(--arc-palette-foregroundSecondary) !important;
+    --selection-faint: #252e40;
+    --selection-fainter: #272b35;
+    --selection-fg: white;
+    --selection-bg: rgba(255, 255, 255, 0.1);
+    --selection-bg-hover: rgba(255, 255, 255, 0.05);
+    --selection-border: rgba(255, 255, 255, 0.3);
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --shadow-color-weak: rgba(0, 0, 0, 0.35);
+    --shadow-contrast-color: rgba(255, 255, 255, 0.1);
+    --shadow-faint-color: rgba(0, 0, 0, 0.2);
+    --shadow-faint-contrast-color: rgba(255, 255, 255, 0.06);
+    --shadow-hairline: rgba(255, 255, 255, 0.1);
+    --link: #5badff;
+    --link-inv-fg: #222;
+    --accent: var(--arc-palette-cutoutColor) !important;
+    --accent2: var(--arc-palette-foregroundSecondary) !important;
+    --scrollbar: rgba(182, 155, 223, 0.25);
+    --scrollbar-hover: rgba(182, 155, 223, 0.5);
+    --user-name-fg: var(--arc-palette-foregroundSecondary) !important;
+    --user-name-fg-highlighted: #c86fff;
+    --role-label-fg: #e3e3e3;
+    --role-label-bg: #372dad;
+    --role-label-bg-staff: var(--arc-palette-cutoutColor) !important;
+    --role-label-bg-tutor: var(--arc-palette-cutoutColor) !important;
+    --success-fg: #3be657;
+    --success-bg: #16c734;
+    --success-bg-transparent: rgba(22, 199, 52, 0.1);
+    --success-border-transparent: rgba(22, 199, 52, 0.25);
+    --danger-fg: #ff8897;
+    --danger-bg: #ef0425;
+    --danger-bg-transparent: rgba(239, 4, 37, 0.1);
+    --danger-border-transparent: rgba(239, 4, 37, 0.25);
+    --warning-fg: #ffb433;
+    --warning-bg: #f09600;
+    --warning-bg-transparent: rgba(240, 150, 0, 0.1);
+    --warning-border-transparent: rgba(240, 150, 0, 0.25);
+    --info-fg: #7bb0ff;
+    --info-bg: #2f75dd;
+    --info-bg-transparent: rgba(47, 117, 221, 0.1);
+    --info-border-transparent: rgba(47, 117, 221, 0.25);
+    --disclosure-bg: rgba(255, 165, 0, 0.05);
+    --Xffffff: hsl(0, 0%, 0%);
+    --Xfcfcfc: hsl(0, 0%, 1.1764705882%);
+    --Xfafafa: hsl(0, 0%, 1.9607843137%);
+    --Xf8f8f8: hsl(0, 0%, 2.7450980392%);
+    --Xf0f0f0: hsl(0, 0%, 5.8823529412%);
+    --X000000: hsl(0, 0%, 100%);
+    --Xeee: hsl(0, 0%, 6.6666666667%);
+    --Xddd: hsl(0, 0%, 13.3333333333%);
+    --Xccc: hsl(0, 0%, 20%);
+    --Xbbb: hsl(0, 0%, 26.6666666667%);
+    --X888: hsl(0, 0%, 46.6666666667%);
+    --X666: hsl(0, 0%, 60%);
+    --X444: hsl(0, 0%, 73.3333333333%);
+    --X222: hsl(0, 0%, 86.6666666667%)
+}
+
+.theme-dark {
+    --discuss-like-fg: var(--arc-background-gradient-color1) !important;
+    --discuss-content-bg: var(--page-bg);
+    --discuss-private-fg: #ccc;
+    --discuss-private-bg: rgba(204, 204, 204, 0.1);
+    --discuss-endorsed-fg: #50aeff;
+    --discuss-endorsed-bg: rgba(80, 174, 255, 0.1);
+    --discuss-pinned-fg: #c780ff;
+    --discuss-starred-fg: #ffca4b;
+    --discuss-accepted-fg: #5dff5d;
+    --discuss-replyingto-btn-bg: #32435d;
+    --discuss-replyingto-btn-fg: #c4dbff;
+    --discuss-new-comment-bg: #63e77b;
+    --discuss-comment-highlight-bg: rgba(228, 140, 0, 0.05)
+}
+
+.theme-dark {
+    --chat-user-name-fg: #96b1ff;
+    --chat-msg-bg: #2e2f34;
+    --chat-msg-bg2: #444650;
+    --chat-unreads-fg: #8bff8b;
+    --chat-dms-fg: #ab71ff;
+    --chat-mentions-fg: #ff8859;
+    --chat-drafts-fg: #ff4a7c
+}
+/* For reference
+:root {
+    --arc-palette-background: #2F1100F6;
+    --arc-palette-foregroundPrimary: #FCEBE4FF;
+    --arc-background-gradient-color0: #EF8B62FF;
+    --arc-background-gradient-color1: #EFE962FF;
+    --arc-palette-cutoutColor: #9A380FFF;
+    --arc-palette-title: #EEDFD6F4;
+    --arc-palette-minContrastColor: #9A380FFF;
+    --arc-palette-focus: #AC5C34CE;
+    --arc-background-gradient-overlay-color0: #00000000;
+    --arc-palette-maxContrastColor: #FCEBE4FF;
+    --arc-palette-foregroundSecondary: #EF8B62FF;
+    --arc-palette-backgroundExtra: #180800F4;
+    --arc-background-gradient-overlay-color1: #EF6297FF;
+    --arc-palette-subtitle: #817975F9;
+    --arc-palette-hover: #B36B457A;
+    --arc-palette-foregroundTertiary: #EF8B62FF;
+}

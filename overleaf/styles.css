@@ -1,17 +1,22 @@
-/*
- * @title Overleaf Style boost
- * @author RachelChiong
-*/
 :root {
   --header-bg: #0a0909 !important;
-  --sidebar-bg: #1a1618 !important;
-  --sidebar-border:#1f1619 !important;
+  --sidebar-bg: #131212 !important;
+  --sidebar-border:#070707 !important;
   /* If you want to add static accent colours, uncomment this */
   /* --primary-accent: #eb1664 !important; */
   /* --secondary-accent:#ff79aa !important; */
   --primary-accent: var(--arc-palette-cutoutColor) !important;
   --secondary-accent: var(--arc-palette-foregroundSecondary) !important;
-  --editor-toolbar-bg: #180d11 !important;
+  --editor-toolbar-bg: #111011 !important;
+  --file-outline-bg: #111111 !important;
+  --hover-bg: #3a3a3a !important;
+  --ol-blue: var(--arc-palette-cutoutColor) !important;
+}
+.entity-name:hover, entity-name-react:hover {
+  background-color: var(--hover-bg) !important;
+}
+.toolbar .btn-full-height:hover {
+  background-color: var(--hover-bg) !important;
 }
 
 /* Sets the colours for each component */
@@ -24,6 +29,18 @@
 
 .file-tree .toolbar.toolbar-filetree {
     background-color: var(--sidebar-bg) !important;
+}
+
+.outline-item-link:hover {
+  background-color: var(--sidebar-bg) !important;
+}
+
+.history-compare-mode-toolbar, .history-toolbar {
+  background-color: var(--header-bg) !important;
+}
+
+.history-file-tree-inner {
+  background-color: var(--sidebar-bg) !important;
 }
 
 .toolbar {
@@ -80,8 +97,8 @@
   background-color: var(--sidebar-bg) !important;
 }
 
-.outline-body {
-  background-color: #1f1619 !important;
+.outline-body, .ui-layout-resizer {
+  background-color: var(--file-outline-bg) !important;
 }
 
 .outline-header {
@@ -110,23 +127,64 @@ td a {
   color: var(--primary-accent) !important;
 }
 
+.toolbar .btn-full-height.active,.toolbar .btn-full-height:active {
+  background-color: var(--secondary-accent) !important;
+}
 
-/*  The first part is called a selector
-    Everything on a web page has a selector:
-    - the tag (body, div, p, etc)
-    - the class (.container)
-    - the id (#main)
-    the rules you write within the {} only effect that selector.
+.history-file-entity-link-selected {
+  background: var(--secondary-accent) !important;
+}
 
-    You can use Inspect Element to find out what an element's
-    tag, ID or class is. */
-.selector {
-  /*  These are rules. You can write as many as you want to!
-    Learn more about CSS here:
-    https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps
-    See a list of all the styles you can change here:
-    https://developer.mozilla.org/en-US/docs/Web/CSS/Reference */
+.history-file-entity-link-selected:before {
+  background: var(--secondary-accent) !important;
+}
 
-  /* font-size: 30px; */
-  /* TODO: Un-comment the line above */
+.history-file-entity-link-selected:focus,.history-file-entity-link-selected:hover {
+  background: var(--secondary-accent) !important;
+}
+
+.history-file-entity-link-selected:focus:before,.history-file-entity-link-selected:hover:before {
+  background: var(--secondary-accent) !important;
+}
+.history-entry-selected .history-entry-details,.history-version-with-label-selected {
+  background-color: var(--secondary-accent) !important;
+}
+.history-entry-hover-selected .history-entry-details,.history-entry-hover-selected.history-entry-selected .history-entry-details,.history-version-with-label-hover-selected,.history-version-with-label-hover-selected.history-entry-selected {
+  background-color: var(--secondary-accent) !important;
+}
+
+.history-toolbar-btn, .alert-info {
+  background-color: var(--primary-accent) !important;
+}
+.history-label-comment {
+  color: var(--primary-accent) !important;
+}
+.history-toolbar-btn-danger {
+  background-color: var(--secondary-accent) !important;
+}
+
+
+
+.project-list-react ul.project-list-filters>li.active>button {
+  background-color: var(--primary-accent) !important;
+}
+
+.custom-toggler {
+  background-color: var(--primary-accent) !important;
+}
+
+.vertical-resizable-resizer {
+  background-color: var(--editor-toolbar-bg) !important;
+}
+
+.outline-item-expand-collapse-btn {
+  background-color: var(--editor-toolbar-bg) !important;
+}
+
+.outline-item-link-highlight {
+   background-color: var(--editor-toolbar-bg) !important;
+}
+
+.outline-header-expand-collapse-btn:hover {
+  background-color: var(--editor-toolbar-bg) !important;
 }
